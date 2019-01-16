@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=LuckyBit
+Comment=LuckyBit P2P Cryptocurrency
+Exec=luckybit-qt %u
+Terminal=false
+Type=Application
+Icon=luckybit128
+MimeType=x-scheme-handler/luckybit;
+Categories=Office;Finance;
+Name[en_US]=luckybit-qt.desktop

@@ -1,0 +1,6 @@
+usr/local/bin/luckybit-qt usr/bin
+share/pixmaps/luckybit32.xpm usr/share/pixmaps
+share/pixmaps/luckybit16.xpm usr/share/pixmaps
+share/pixmaps/luckybit128.png usr/share/pixmaps
+debian/luckybit-qt.desktop usr/share/applications
+debian/luckybit-qt.protocol usr/share/kde4/services/

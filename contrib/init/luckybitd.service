@@ -1,0 +1,22 @@
+[Unit]
+Description=LuckyBit's distributed currency daemon
+After=network.target
+
+[Service]
+User=luckybitcore
+Group=luckybitcore
+
+Type=forking
+PIDFile=/var/lib/luckybitd/luckybitd.pid
+ExecStart=/usr/bin/luckybitd -daemon -pid=/var/lib/luckybitd/luckybitd.pid \
+-conf=/etc/luckybitcore/luckybit.conf -datadir=/var/lib/luckybitd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
